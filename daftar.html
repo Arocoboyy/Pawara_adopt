@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Akun - Pawara Adopt</title>
+    <title>Register Account - Pawara Adopt</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
@@ -13,11 +13,11 @@
             <img src="assets/images/pawara.png" alt="PAWARA ADOPT">
         </div>
         <div class="nav-links">
-            <a href="index.html">Beranda</a>
-            <a href="adopt.html">Adopsi Anjing</a>
-            <a href="mine.html">Kepemilikan Saya</a>
-            <a href="about.html">Tentang Kami</a>
-            <a href="artikel.html">Artikel</a>
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Dog Adoption</a>
+            <a href="mine.html">My Dogs</a>
+            <a href="about.html">About Us</a>
+            <a href="artikel.html">Articles</a>
         </div>
     </nav><br><br><br><br>
 
@@ -25,12 +25,12 @@
         <section class="auth-section">
             <div class="container2">
                 <div class="auth-container">
-                    <h1>Daftar Akun</h1>
-                    <p class="auth-description">Buat akun untuk mulai mengadopsi dan memberi kesempatan baru</p>
+                    <h1>Register Account</h1>
+                    <p class="auth-description">Create an account to start adopting and give a new opportunity</p>
                     
                     <form id="registerForm" class="auth-form">
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
+                            <label for="nama">Full Name</label>
                             <input type="text" id="nama" name="nama" required>
                         </div>
                         
@@ -40,48 +40,48 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="noTelp">Nomor Telepon</label>
+                            <label for="noTelp">Phone Number</label>
                             <input type="tel" id="noTelp" name="noTelp" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" id="password" name="password" required>
-                            <small>Minimal 8 karakter, kombinasi huruf dan angka</small>
+                            <small>Minimum 8 characters, combination of letters and numbers</small>
                         </div>
                         
                         <div class="form-group">
-                            <label for="confirmPassword">Konfirmasi Password</label>
+                            <label for="confirmPassword">Confirm Password</label>
                             <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
                         
                         <div class="form-options">
                             <div class="terms-check">
                                 <input type="checkbox" id="terms" name="terms" required>
-                                <label for="terms">Saya setuju dengan <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a></label>
+                                <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
                             </div>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary btn-full">Daftar Sekarang</button>
+                        <button type="submit" class="btn btn-primary btn-full">Register Now</button>
                     </form>
                     
                     <div class="auth-separator">
-                        <span>Atau</span>
+                        <span>Or</span>
                     </div>
                     
                     <div class="social-login">
                         <button class="btn btn-social btn-google">
                             <img src="assets/images/google.jpg" alt="Google">
-                            Daftar dengan Google
+                            Register with Google
                         </button>
                         <button class="btn btn-social btn-facebook">
                             <img src="assets/images/fb.jpg" alt="Facebook">
-                            Daftar dengan Facebook
+                            Register with Facebook
                         </button>
                     </div>
                     
                     <p class="auth-redirect">
-                        Sudah memiliki akun? <a href="login.html">Login di sini</a>
+                        Already have an account? <a href="login.html">Login here</a>
                     </p>
                 </div>
             </div>
@@ -95,7 +95,7 @@
     <div class="chat-popup">
         <div class="chat-header">
             <div class="chat-header-title">
-                <strong>Tanya AI PAWARA</strong>
+                <strong>Ask PAWARA AI</strong>
                 <div style="font-size: 12px; color: #a0a0a0;">Online</div>
             </div>
             <button class="close-button" onclick="toggleChatPopup()">
@@ -107,18 +107,18 @@
         </div>
         <div class="chat-body" id="chatBody">
             <div class="chat-message ai-message">
-                Halo! Saya Pawara, asisten AI yang siap membantu Anda dengan informasi tentang anjing jalanan dan bagaimana membantu mereka. Ada yang bisa saya bantu?
+                Hello! I'm Pawara, an AI assistant ready to help you with information about street dogs and how to help them. How can I assist you?
             </div>
             <div class="chat-message user-message">
-                Bagaimana cara terbaik membantu anjing jalanan tanpa harus mengadopsi?
+                What's the best way to help street dogs without adopting them?
             </div>
             <div class="chat-message ai-message">
-                Anda bisa membantu dengan memberikan makanan, mendukung shelter melalui donasi, menjadi relawan, atau menyebarkan informasi tentang adopsi untuk meningkatkan peluang mereka mendapatkan rumah.
+                You can help by providing food, supporting shelters through donations, volunteering, or spreading information about adoption to increase their chances of finding a home.
             </div>
         </div>
         
         <div class="chat-input">
-            <input type="text" placeholder="Masukan pertanyaanmu" id="chatInput">
+            <input type="text" placeholder="Enter your question" id="chatInput">
             <button onclick="sendMessage()">➤</button>
         </div>
     </div>

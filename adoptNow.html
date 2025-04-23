@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../static/css/style.css">
-    <title>Adopsi sekarang - Pawara Adopt</title>
+    <title>Adopt Now - Pawara Adopt</title>
 </head>
 <body>
     <nav>
@@ -17,75 +17,75 @@
             <img src="assets/images/pawara.png" alt="PAWARA ADOPT">
         </div>
         <div class="nav-links">
-            <a href="index.html">Beranda</a>
-            <a href="adopt.html"><b>Adopsi Anjing</b></a>
-            <a href="mine.html">Kepemilikan Saya</a>
-            <a href="about.html">Tentang Kami</a>
-            <a href="artikel.html">Artikel</a>
+            <a href="index.html">Home</a>
+            <a href="adopt.html"><b>Adopt a Dog</b></a>
+            <a href="mine.html">My Adoptions</a>
+            <a href="about.html">About Us</a>
+            <a href="artikel.html">Articles</a>
         </div>
         <div class="nav-buttons">
-            <a href="daftar.html" class="btn btn-outline">Daftar Akun</a>
+            <a href="daftar.html" class="btn btn-outline">Sign Up</a>
             <a href="login.html" class="btn btn-primary">Login</a>
         </div>
     </nav><br><br><br><br>
 
     <div class="container">
         <form id="adoptionForm">
-            <h1>Lengkapi Persyaratan</h1>
-            <p class="subtitle">Untuk melanjutkan proses adopsi Milo, harap unggah dokumen berikut:</p>
+            <h1>Complete the Requirements</h1>
+            <p class="subtitle">To proceed with adopting Milo, please upload the following documents:</p>
 
             <div class="form-section">
-                <h2>Data Pribadi</h2>
+                <h2>Personal Information</h2>
                 <div class="form-group">
-                    <label for="nama">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                    <label for="nama">Full Name</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Enter full name">
                 </div>
 
                 <div class="form-group">
-                    <label for="alamat">Alamat Lengkap</label>
-                    <textarea id="alamat" name="alamat" required placeholder="Masukkan alamat lengkap"></textarea>
+                    <label for="alamat">Full Address</label>
+                    <textarea id="alamat" name="alamat" required placeholder="Enter full address"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="telepon">Nomor Telepon</label>
-                    <input type="tel" id="telepon" name="telepon" required placeholder="Masukkan nomor telepon">
+                    <label for="telepon">Phone Number</label>
+                    <input type="tel" id="telepon" name="telepon" required placeholder="Enter phone number">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Masukkan email">
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
                 </div>
 
                 <div class="form-group">
-                    <label for="status">Status Tempat Tinggal</label>
-                    <input type="text" id="status" name="status" required placeholder="Masukkan status tempat tinggal">
+                    <label for="status">Residence Status</label>
+                    <input type="text" id="status" name="status" required placeholder="Enter your residence status">
                 </div>
 
                 <div class="form-group">
-                    <label for="penghasilan">Penghasilan Perbulan</label>
+                    <label for="penghasilan">Monthly Income</label>
                     <select id="penghasilan" name="penghasilan" required>
-                        <option value="">Pilih penghasilan</option>
-                        <option value="1">Rp 1.000.000,00 - Rp 2.000.000,00</option>
-                        <option value="2">Rp 2.000.000,00 - Rp 3.000.000,00</option>
-                        <option value="3">Rp 3.000.000,00 - Rp 4.000.000,00</option>
+                        <option value="">Select your income range</option>
+                        <option value="1">Rp 1,000,000 - Rp 2,000,000</option>
+                        <option value="2">Rp 2,000,000 - Rp 3,000,000</option>
+                        <option value="3">Rp 3,000,000 - Rp 4,000,000</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-section">
-                <h2>Dokumen Pendukung</h2>
+                <h2>Supporting Documents</h2>
                 <div class="form-group">
-                    <label for="alasan">Alasan Mengadopsi</label>
-                    <textarea id="alasan" name="alasan" required placeholder="Berikan alasanmu mengadopsi"></textarea>
+                    <label for="alasan">Reason for Adoption</label>
+                    <textarea id="alasan" name="alasan" required placeholder="Explain your reason for adoption"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>KTP/Paspor (Format: JPG, PNG, atau PDF, max 2MB)</label>
+                    <label>ID Card/Passport (Format: JPG, PNG, or PDF, max 2MB)</label>
                     <div class="upload-box" id="ktpUploadBox">
                         <input type="file" class="file-input" id="ktpFile" accept=".jpg,.jpeg,.png,.pdf" data-max-size="2">
                         <div class="upload-icon">📄</div>
-                        <p>Unggah Dokumen</p>
-                        <div class="file-info">Belum ada file dipilih</div>
+                        <p>Upload Document</p>
+                        <div class="file-info">No file selected</div>
                         <div class="error-message"></div>
                         <div class="progress-bar">
                             <div class="progress"></div>
@@ -94,39 +94,39 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Surat Pernyataan Kesediaan Merawat</label>
+                    <label>Commitment Letter to Take Care</label>
                     <div class="upload-box" id="suratUploadBox">
                         <input type="file" class="file-input" id="suratFile" accept=".jpg,.jpeg,.png,.pdf" data-max-size="2">
                         <div class="upload-icon">📄</div>
-                        <p>Unggah Dokumen</p>
-                        <div class="file-info">Belum ada file dipilih</div>
+                        <p>Upload Document</p>
+                        <div class="file-info">No file selected</div>
                         <div class="error-message"></div>
                         <div class="progress-bar">
                             <div class="progress"></div>
                         </div>
                     </div>
-                    <p class="helper-text">Formulir akan diberikan setelah proses verifikasi awal</p>
+                    <p class="helper-text">The form will be provided after initial verification</p>
                 </div>
 
                 <div class="form-group">
-                    <label>Bukti Penghasilan Perbulan</label>
+                    <label>Proof of Monthly Income</label>
                     <div class="upload-box" id="penghasilanUploadBox">
                         <input type="file" class="file-input" id="penghasilanFile" accept=".jpg,.jpeg,.png,.pdf" data-max-size="2">
                         <div class="upload-icon">📄</div>
-                        <p>Unggah Dokumen</p>
-                        <div class="file-info">Belum ada file dipilih</div>
+                        <p>Upload Document</p>
+                        <div class="file-info">No file selected</div>
                         <div class="error-message"></div>
                         <div class="progress-bar">
                             <div class="progress"></div>
                         </div>
                     </div>
-                    <p class="helper-text">Slip gaji atau rekening koran 3 bulan terakhir</p>
+                    <p class="helper-text">Latest salary slip or last 3 months' bank statements</p>
                 </div>
             </div>
 
             <div class="button-group">
-                <button type="button" class="btn-secondary" id="cancelButton">Batalkan</button>
-                <button type="submit" class="btn-primary">Adopsi Sekarang</button>
+                <button type="button" class="btn-secondary" id="cancelButton">Cancel</button>
+                <button type="submit" class="btn-primary">Adopt Now</button>
             </div>
         </form>
     </div>
@@ -134,38 +134,39 @@
         <img src="assets/images/icon.png" alt="Chat Icon">
     </button>
 
-<div id="chatPopupContainer" class="chat-popup-container">
-    <div class="chat-popup">
-        <div class="chat-header">
-            <div class="chat-header-title">
-                <strong>Tanya AI PAWARA</strong>
-                <div style="font-size: 12px; color: #a0a0a0;">Online</div>
+    <div id="chatPopupContainer" class="chat-popup-container">
+        <div class="chat-popup">
+            <div class="chat-header">
+                <div class="chat-header-title">
+                    <strong>Ask PAWARA AI</strong>
+                    <div style="font-size: 12px; color: #a0a0a0;">Online</div>
+                </div>
+                <button class="close-button" onclick="toggleChatPopup()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
-            <button class="close-button" onclick="toggleChatPopup()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-        </div>
-        <div class="chat-body" id="chatBody">
-            <div class="chat-message ai-message">
-                Halo! Saya Pawara, asisten AI yang siap membantu Anda dengan informasi tentang anjing jalanan dan bagaimana membantu mereka. Ada yang bisa saya bantu?
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message ai-message">
+                    Hi! I'm Pawara, an AI assistant ready to help you with information about stray dogs and how to support them. How can I help you?
+                </div>
+                <div class="chat-message user-message">
+                    What’s the best way to help stray dogs without adopting?
+                </div>
+                <div class="chat-message ai-message">
+                    You can help by providing food, supporting shelters through donations, volunteering, or spreading information about adoption to increase their chances of finding a home.
+                </div>
             </div>
-            <div class="chat-message user-message">
-                Bagaimana cara terbaik membantu anjing jalanan tanpa harus mengadopsi?
+
+            <div class="chat-input">
+                <input type="text" placeholder="Type your question" id="chatInput">
+                <button onclick="sendMessage()">➤</button>
             </div>
-            <div class="chat-message ai-message">
-                Anda bisa membantu dengan memberikan makanan, mendukung shelter melalui donasi, menjadi relawan, atau menyebarkan informasi tentang adopsi untuk meningkatkan peluang mereka mendapatkan rumah.
-            </div>
-        </div>
-        
-        <div class="chat-input">
-            <input type="text" placeholder="Masukan pertanyaanmu" id="chatInput">
-            <button onclick="sendMessage()">➤</button>
         </div>
     </div>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>

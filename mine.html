@@ -290,9 +290,9 @@
     <div class="popup-overlay" id="welcomePopup">
         <div class="popup-content">
             <div style="font-size: 3rem; margin-bottom: 1rem;">🐶</div>
-            <h2 class="popup-title">Selamat Datang di Chatbot Anjing AI</h2>
-            <p class="popup-text">Selamat datang di fitur chatbot anjing AI kami. Di sini Anda bisa berkomunikasi dengan representasi AI dari anjing-anjing yang telah kamu adopsi. Mengenal kepribadian dan cerita mereka adalah tempatnya!</p>
-            <button class="popup-close" id="closePopup">Mulai</button>
+            <h2 class="popup-title">Welcome to the AI Dog Chatbot</h2>
+            <p class="popup-text">Welcome to our AI dog chatbot feature. Here you can communicate with AI representations of dogs you've adopted. Get to know their personalities and stories!</p>
+            <button class="popup-close" id="closePopup">Start</button>
         </div>
     </div>
 
@@ -301,14 +301,14 @@
             <img src="assets/images/pawara.png" alt="PAWARA ADOPT">
         </div>
         <div class="nav-links">
-            <a href="index.html">Beranda</a>
-            <a href="adopt.html">Adopsi Anjing</a>
-            <a href="mine.html"><b>Kepemilikan Saya</b></a>
-            <a href="about.html">Tentang Kami</a>
-            <a href="artikel.html">Artikel</a>
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt Dogs</a>
+            <a href="mine.html"><b>My Dogs</b></a>
+            <a href="about.html">About Us</a>
+            <a href="artikel.html">Articles</a>
         </div>
         <div class="nav-buttons">
-            <a href="daftar.html" class="btn btn-outline">Daftar Akun</a>
+            <a href="daftar.html" class="btn btn-outline">Register</a>
             <a href="login.html" class="btn btn-primary">Login</a>
         </div>
     </nav><br>
@@ -317,14 +317,14 @@
         <div class="container">
             <div class="chatbot-container">
                 <div class="dog-selection">
-                    <h2 class="section-title">Pilih Anjing</h2>
-                    <input type="text" class="search-box" placeholder="Cari berdasarkan nama, jenis, umur...">
+                    <h2 class="section-title">Select Dog</h2>
+                    <input type="text" class="search-box" placeholder="Search by name, breed, age...">
                     
                     <div class="dog-card active" data-dog="putih">
                         <img src="/api/placeholder/50/50" alt="Putih" class="dog-avatar">
                         <div>
                             <h3>Putih</h3>
-                            <p>Anjing Kampung, 2 tahun</p>
+                            <p>Local Dog, 2 years</p>
                     </div>
                 </div>
                 
@@ -332,7 +332,7 @@
                     <img src="/api/placeholder/50/50" alt="Max" class="dog-avatar">
                     <div>
                         <h3>Max</h3>
-                        <p>Golden Retriever, 3 tahun</p>
+                        <p>Golden Retriever, 3 years</p>
                     </div>
                 </div>
                 
@@ -340,7 +340,7 @@
                     <img src="/api/placeholder/50/50" alt="Bella" class="dog-avatar">
                     <div>
                         <h3>Bella</h3>
-                        <p>Siberian Husky, 1 tahun</p>
+                        <p>Siberian Husky, 1 year</p>
                     </div>
                 </div>
                 
@@ -348,7 +348,7 @@
                     <img src="/api/placeholder/50/50" alt="Rocky" class="dog-avatar">
                     <div>
                         <h3>Rocky</h3>
-                        <p>Bulldog, 4 tahun</p>
+                        <p>Bulldog, 4 years</p>
                     </div>
                 </div>
                 
@@ -356,7 +356,7 @@
                     <img src="/api/placeholder/50/50" alt="Luna" class="dog-avatar">
                     <div>
                         <h3>Luna</h3>
-                        <p>Anjing Kampung, 1.5 tahun</p>
+                        <p>Local Dog, 1.5 years</p>
                     </div>
                 </div>
             </div>
@@ -367,19 +367,19 @@
                     <img src="/api/placeholder/50/50" alt="Putih" class="dog-avatar" id="chatDogAvatar">
                     <div class="dog-info">
                         <h3 id="chatDogName">Putih</h3>
-                        <p id="chatDogInfo">Anjing Kampung, 2 tahun</p>
+                        <p id="chatDogInfo">Local Dog, 2 years</p>
                     </div>
                     </a>
                 </div>
                 
                 <div class="chat-messages" id="chatMessages">
                     <div class="message dog-message">
-                        Halo! Nama saya Putih. Saya anjing kampung berusia 2 tahun yang sangat suka bermain dan dekat dengan manusia. Senang berkenalan denganmu! Bagaimana kabarmu hari ini?
+                        Hello! My name is Putih. I'm a 2-year-old local dog who loves to play and be close to humans. Nice to meet you! How are you today?
                     </div>
                 </div>
                 
                 <div class="chat-input">
-                    <input type="text" id="messageInput" placeholder="Ketik pesan Anda disini...">
+                    <input type="text" id="messageInput" placeholder="Type your message here...">
                     <button class="send-btn" id="sendButton">
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -402,28 +402,28 @@
         const dogProfiles = {
             putih: {
                 name: "Putih",
-                info: "Anjing Kampung, 2 tahun",
-                greeting: "Halo! Nama saya Putih. Saya anjing kampung berusia 2 tahun yang sangat suka bermain dan dekat dengan manusia. Senang berkenalan denganmu! Bagaimana kabarmu hari ini?"
+                info: "Local Dog, 2 years",
+                greeting: "Hello! My name is Putih. I'm a 2-year-old local dog who loves to play and be close to humans. Nice to meet you! How are you today?"
             },
             max: {
                 name: "Max",
-                info: "Golden Retriever, 3 tahun",
-                greeting: "Halo teman baru! Saya Max, Golden Retriever yang penuh energi dan sangat ramah. Saya suka bermain bola dan berenang. Senang berkenalan denganmu!"
+                info: "Golden Retriever, 3 years",
+                greeting: "Hello new friend! I'm Max, an energetic and very friendly Golden Retriever. I love playing with balls and swimming. Nice to meet you!"
             },
             bella: {
                 name: "Bella",
-                info: "Siberian Husky, 1 tahun",
-                greeting: "Hai! Saya Bella, Husky berusia 1 tahun yang sangat aktif. Saya suka berlari dan bermain di luar ruangan. Saya mencari keluarga yang aktif seperti saya!"
+                info: "Siberian Husky, 1 year",
+                greeting: "Hi! I'm Bella, a very active 1-year-old Husky. I love running and playing outdoors. I'm looking for an active family like me!"
             },
             rocky: {
                 name: "Rocky",
-                info: "Bulldog, 4 tahun",
-                greeting: "Halo! Saya Rocky, Bulldog berusia 4 tahun yang tenang dan penyayang. Saya lebih suka duduk santai dan menikmati waktu bersama manusia. Bagaimana harimu?"
+                info: "Bulldog, 4 years",
+                greeting: "Hello! I'm Rocky, a calm and loving 4-year-old Bulldog. I prefer to relax and enjoy time with humans. How's your day going?"
             },
             luna: {
                 name: "Luna",
-                info: "Anjing Kampung, 1.5 tahun",
-                greeting: "Hai! Saya Luna, anjing kampung berusia 1.5 tahun. Saya sangat penuh kasih sayang dan suka bermain dengan anak-anak. Senang berkenalan denganmu!"
+                info: "Local Dog, 1.5 years",
+                greeting: "Hi! I'm Luna, a 1.5-year-old local dog. I'm very affectionate and love playing with children. Nice to meet you!"
             }
         };
         
@@ -498,40 +498,40 @@
             // Simple response logic based on keywords
             userMessage = userMessage.toLowerCase();
             
-            if (userMessage.includes('nama') || userMessage.includes('siapa')) {
-                response = `Nama saya ${dog.name}. Senang berkenalan denganmu!`;
-            } else if (userMessage.includes('umur') || userMessage.includes('usia')) {
-                response = `Usia saya ${dog.info.split(', ')[1]}. Masih cukup muda dan energik!`;
-            } else if (userMessage.includes('makanan') || userMessage.includes('makan')) {
-                response = `Saya suka makanan anjing biasa, tapi terkadang diberi makanan khusus oleh petugas penampungan untuk kesehatan saya.`;
-            } else if (userMessage.includes('main') || userMessage.includes('bermain')) {
+            if (userMessage.includes('name') || userMessage.includes('who')) {
+                response = `My name is ${dog.name}. Nice to meet you!`;
+            } else if (userMessage.includes('age') || userMessage.includes('old')) {
+                response = `I'm ${dog.info.split(', ')[1]}. Still quite young and energetic!`;
+            } else if (userMessage.includes('food') || userMessage.includes('eat')) {
+                response = `I like regular dog food, but sometimes I get special food from the shelter staff for my health.`;
+            } else if (userMessage.includes('play') || userMessage.includes('game')) {
                 if (dogId === 'max') {
-                    response = `Saya sangat suka bermain lempar bola dan berenang!`;
+                    response = `I really enjoy playing fetch and swimming!`;
                 } else if (dogId === 'bella') {
-                    response = `Sebagai Husky, saya sangat suka berlari dan bermain di luar ruangan yang luas!`;
+                    response = `As a Husky, I love running and playing outdoors in wide open spaces!`;
                 } else {
-                    response = `Saya suka bermain bola dan kejar-kejaran di taman.`;
+                    response = `I like playing with balls and running around in the park.`;
                 }
-            } else if (userMessage.includes('cerita') || userMessage.includes('sejarah') || userMessage.includes('latar belakang')) {
+            } else if (userMessage.includes('story') || userMessage.includes('history') || userMessage.includes('background')) {
                 if (dogId === 'putih') {
-                    response = `Saya ditemukan di pinggir jalan saat masih kecil. Seorang relawan Pawara menyelamatkan saya dan membawa saya ke penampungan. Sejak itu saya telah belajar berbagai perintah dasar dan sangat suka bergaul dengan anjing dan manusia lainnya.`;
+                    response = `I was found on the side of the road when I was little. A Pawara volunteer rescued me and brought me to the shelter. Since then, I've learned various basic commands and really enjoy socializing with other dogs and humans.`;
                 } else if (dogId === 'max') {
-                    response = `Pemilik sebelumnya harus pindah ke luar negeri dan tidak bisa membawa saya. Saya sudah terlatih dengan baik dan sangat ramah dengan anak-anak.`;
+                    response = `My previous owner had to move abroad and couldn't take me with them. I'm well-trained and very friendly with children.`;
                 } else if (dogId === 'bella') {
-                    response = `Saya diselamatkan dari peternak ilegal yang menjual anak-anak Husky. Tim Pawara menyelamatkan saya dan saudara-saudara saya. Mereka sekarang sudah memiliki keluarga baru, dan saya masih mencari keluarga yang tepat untuk saya.`;
+                    response = `I was rescued from an illegal breeder who was selling Husky puppies. The Pawara team rescued me and my siblings. They now have new families, and I'm still looking for the right family for me.`;
                 } else if (dogId === 'rocky') {
-                    response = `Saya sudah berada di penampungan selama 1 tahun. Pemilik sebelumnya tidak bisa merawat saya karena masalah kesehatan. Saya anjing yang tenang dan tidak butuh banyak aktivitas fisik.`;
+                    response = `I've been at the shelter for 1 year. My previous owner couldn't take care of me due to health issues. I'm a calm dog and don't need much physical activity.`;
                 } else {
-                    response = `Saya ditemukan berkeliaran di pasar dengan kondisi kurus dan tidak terawat. Setelah dirawat oleh tim Pawara, kondisi saya semakin membaik dan siap untuk diadopsi.`;
+                    response = `I was found wandering around a market, skinny and neglected. After being cared for by the Pawara team, my condition improved and I'm ready for adoption.`;
                 }
-            } else if (userMessage.includes('adopsi') || userMessage.includes('proses')) {
-                response = `Untuk mengadopsi saya, Anda perlu mengisi formulir adopsi, melakukan wawancara dengan tim Pawara, dan jika disetujui, Anda bisa membawa saya pulang. Tim akan melakukan kunjungan tindak lanjut untuk memastikan saya beradaptasi dengan baik.`;
-            } else if (userMessage.includes('halo') || userMessage.includes('hai') || userMessage.includes('hi')) {
-                response = `Halo! Senang berbicara denganmu. Apa yang ingin kamu ketahui tentang saya?`;
-            } else if (userMessage.includes('terima kasih') || userMessage.includes('makasih')) {
-                response = `Sama-sama! Semoga kita bisa bertemu langsung suatu hari nanti. Guk guk! 🐾`;
+            } else if (userMessage.includes('adopt') || userMessage.includes('process')) {
+                response = `To adopt me, you need to fill out an adoption form, have an interview with the Pawara team, and if approved, you can take me home. The team will do follow-up visits to make sure I'm adapting well.`;
+            } else if (userMessage.includes('hello') || userMessage.includes('hi')) {
+                response = `Hello! Nice to talk to you. What would you like to know about me?`;
+            } else if (userMessage.includes('thank you') || userMessage.includes('thanks')) {
+                response = `You're welcome! Hope we can meet in person someday. Woof woof! 🐾`;
             } else {
-                response = `Maaf, saya tidak mengerti maksud Anda. Tanyakan tentang saya, kebiasaan saya, atau proses adopsi dan saya akan mencoba menjawabnya.`;
+                response = `Sorry, I don't understand what you mean. Ask me about myself, my habits, or the adoption process and I'll try to answer.`;
             }
             
             // Create response element
@@ -580,7 +580,7 @@
         <div class="chat-popup">
             <div class="chat-header">
                 <div class="chat-header-title">
-                    <strong>Tanya AI PAWARA</strong>
+                    <strong>Ask PAWARA AI</strong>
                     <div style="font-size: 12px; color: #a0a0a0;">Online</div>
                 </div>
                 <button class="close-button" onclick="toggleChatPopup()">
@@ -592,18 +592,18 @@
             </div>
             <div class="chat-body" id="chatBody">
                 <div class="chat-message ai-message">
-                    Halo! Saya Pawara, asisten AI yang siap membantu Anda dengan informasi tentang anjing jalanan dan bagaimana membantu mereka. Ada yang bisa saya bantu?
+                    Hello! I'm Pawara, an AI assistant ready to help you with information about stray dogs and how to help them. How can I assist you?
                 </div>
                 <div class="chat-message user-message">
-                    Bagaimana cara terbaik membantu anjing jalanan tanpa harus mengadopsi?
+                    What's the best way to help stray dogs without adopting them?
                 </div>
                 <div class="chat-message ai-message">
-                    Anda bisa membantu dengan memberikan makanan, mendukung shelter melalui donasi, menjadi relawan, atau menyebarkan informasi tentang adopsi untuk meningkatkan peluang mereka mendapatkan rumah.
+                    You can help by providing food, supporting shelters through donations, volunteering, or spreading information about adoption to increase their chances of finding a home.
                 </div>
             </div>
             
             <div class="chat-input">
-                <input type="text" placeholder="Masukan pertanyaanmu" id="chatInput">
+                <input type="text" placeholder="Enter your question" id="chatInput">
                 <button onclick="sendMessage()">➤</button>
             </div>
         </div>

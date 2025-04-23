@@ -357,3 +357,92 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get tab elements
+    const shelterTab = document.querySelector('.tab[data-tab="shelter"]');
+    const discoveryTab = document.querySelector('.tab[data-tab="discovery"]');
+    
+    // Get content elements
+    const shelterContent = document.getElementById('shelter-content');
+    const discoveryContent = document.getElementById('discovery-content');
+    
+    // Add click event listeners to tabs
+    shelterTab.addEventListener('click', function() {
+      // Remove active class from all tabs and contents
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      // Add active class to shelter tab and content
+      shelterTab.classList.add('active');
+      shelterContent.classList.add('active');
+    });
+    
+    discoveryTab.addEventListener('click', function() {
+      // Remove active class from all tabs and contents
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      // Add active class to discovery tab and content
+      discoveryTab.classList.add('active');
+      discoveryContent.classList.add('active');
+    });
+    
+    // Add map interaction functionality
+    const mapPlusButton = document.querySelector('.map-button:nth-child(1)');
+    const mapMinusButton = document.querySelector('.map-button:nth-child(2)');
+    const mapImage = document.querySelector('.map-img');
+    
+    let zoomLevel = 1;
+    
+    mapPlusButton.addEventListener('click', function() {
+      if (zoomLevel < 2) {
+        zoomLevel += 0.2;
+        mapImage.style.transform = `scale(${zoomLevel})`;
+      }
+    });
+    
+    mapMinusButton.addEventListener('click', function() {
+      if (zoomLevel > 0.5) {
+        zoomLevel -= 0.2;
+        mapImage.style.transform = `scale(${zoomLevel})`;
+        mapImage.style.transformOrigin = 'center center';
+      }
+    });
+    
+    // Add shelter view button to the action buttons
+    const actionButtonsContainer = document.querySelector('.action-buttons');
+    const viewShelterButton = document.createElement('a');
+    viewShelterButton.className = 'action-button white';
+    viewShelterButton.textContent = 'View Shelter';
+    viewShelterButton.href = '#shelter-content';
+    
+    viewShelterButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      shelterTab.classList.add('active');
+      shelterContent.classList.add('active');
+      
+      // Scroll to shelter content
+      shelterContent.scrollIntoView({ behavior: 'smooth' });
+    });
+    
+    actionButtonsContainer.appendChild(viewShelterButton);
+    
+    // Add favorite button functionality
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    favoriteBtn.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const heartIcon = this.querySelector('i');
+      
+      if (this.classList.contains('active')) {
+        heartIcon.classList.remove('far');
+        heartIcon.classList.add('fas');
+      } else {
+        heartIcon.classList.remove('fas');
+        heartIcon.classList.add('far');
+      }
+    });
+  });
